@@ -11,7 +11,7 @@ RUN apt-get update \
 
 FROM compiler-common AS compiler-stylesheet
 RUN cd ~ \
-&& git clone --single-branch --branch v5.4.0 https://github.com/gravitystorm/openstreetmap-carto.git --depth 1 \
+&& git clone https://github.com/kiwionly/openstreetmap-carto.git --depth 1 \
 && cd openstreetmap-carto \
 && rm -rf .git
 
